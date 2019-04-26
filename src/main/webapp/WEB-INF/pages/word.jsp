@@ -52,7 +52,7 @@
                     </tr>
 
                     <tr class="bg" align="center">
-                        <td>参数名</td>
+                        <td>入参</td>
                         <td>数据类型</td>
                         <td>参数类型</td>
                         <td>是否必填</td>
@@ -73,16 +73,16 @@
                         </tr>
                     </c:forEach>
                     <tr class="bg" align="center">
-                        <td>状态码</td>
-                        <td>描述</td>
+                        <td>回参</td>
+                        <td>数据类型</td>
                         <td colspan="3">说明</td>
                     </tr>
 
                     <c:forEach items="${t.responseList}" var="res">
                         <tr align="center">
                             <td>${res.name}</td>
-                            <td>${res.description}</td>
-                            <td colspan="3">${res.remark}</td>
+                            <td >${res.remark}</td>
+                            <td colspan="3">${res.description}</td>
                         </tr>
                     </c:forEach>
 
